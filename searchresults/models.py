@@ -7,4 +7,4 @@ class Recipes(models.Model):
     image = models.CharField(max_length=256)
 
     def __str__(self):
-        return self.recipe_name, self.recipe, self.image
+        return self.recipe_name
