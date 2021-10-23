@@ -1,3 +1,3 @@
-Beanie Bakes
+# Beanie Bakes
 
-Baking recipe website made using Django, NoSQL and HTML5/CSS3.
+Baking recipe website made using Django, NLTK, SQLite and HTML5/CSS3.
