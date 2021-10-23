@@ -1,4 +1,16 @@
+from aifc import Error
+
 import sqlparse as sp
+import globalvars as gv
+import sqlite3
+
+
+def create_connection(db_file):
+    conn = None
+    try:
+        conn = sqlite3.connect('db.sqlite3')
+    except Error as e:
+        print(e)
 
 
 def result():
@@ -6,6 +18,7 @@ def result():
 
 
 def main():
+    sp.parse(gv.searchstring)
     result()
 
 
