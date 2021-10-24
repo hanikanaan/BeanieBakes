@@ -20,9 +20,11 @@ def parse_db(db_path, pos):
         }
         yield data
 
+
 def main(args):
     path = args.db_path
-    results = sorted(chain(parse_db(path, "adv"), parse_db(path, "adj"), parse_db(path, "noun"), parse_db(path, "verb")), key=lambda o: o["word"])
+    results = sorted(chain(parse_db(path, "adv"), parse_db(path, "adj"), parse_db(path, "noun"), parse_db(path, "verb"))
+                     , key=lambda o: o["word"])
     with open(args.output, "w") as f:
         for r in results:
             f.write(json.dumps(r) + "\n")
