@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Beanie Bakes</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    
+    <style>
+    body, html {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(floral4.jpg); 
+        font-family: 'Trebuchet MS';
+        font-size: 80px;
+        }
+
+    /*Parent container*/
+    .Container {
+        width: 95%;
+        min-width: 500px;
+        font-size: 72px;
+        margin: auto;
+        padding-top:20px; /*Moves the headerbox down the page*/
+    }
+    /*Beanie Bakes Title & Icon container*/
+    header {
+        width: 100%;
+        height: 190px;
+        line-height: 170px;
+        padding-top:3px;  /*Moves the icon and text down the headerbox*/
+        padding-bottom:12px;
+        background-color: rgb(253, 203, 226);   
+        border-top: double 2px rgb(209, 74, 137); 
+        border-left: double 2px rgb(209, 74, 137); 
+        border-right:double 2px rgb(209, 74, 137); 
+    }
+
+    /*Beanie Bakes*/
+    header span {
+        font-family: Quattrocento Sans;
+        font-variant: small-caps;
+        font-style: normal;
+        font-weight: bold;
+        font-size:98%;
+        line-height: 100px;
+        text-shadow: 0px 4px 4px rgba(151, 88, 88, 0.55);
+        -webkit-text-stroke-width: 0.3px;
+        -webkit-text-stroke-color: rgb(253, 150, 198);
+        color: rgb(255, 255, 255);
+        font-size: 100%;
+        padding-left: 20px;
+       
+    }
+
+
+    /*Top Navigation*/
+    .topnav {
+        overflow: auto;
+        white-space: nowrap;
+        font-family: Quattrocento Sans;
+        border: double 2px rgb(209, 74, 137); 
+        background-color: rgb(253, 150, 198);
+        font-size:30px;
+    }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 95%;
+            margin-left:5px;
+            margin-right:0px; 
+
+}
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: rgb(255, 219, 243);
+            color: black;
+        }
+
+        /* Style the "active" element to highlight the current page */
+        .topnav a.active {
+            background-color: #ff589e;
+            color: white;
+            
+        }
+
+        /*Search Bar*/
+        .topnav .search {
+            display: inline-block; 
+            font-size:65%; 
+            padding-left: 100px;  
+            margin-right:5px; 
+        }
+
+        .topnav button {
+            color:rgb(253, 150, 198);
+            background-color: white;
+            border: 0.5px rgb(209, 74, 137) 
+        }
+        /*Search Button*/
+        .topnav button:hover {
+            background: rgb(255, 219, 243);
+        }
+
+
+
+
+.content {
+    inline-size: min-content;   /*FITS TO THE AMOUNT OF TEXT THERE IS*/
+    width: 100%;
+    /* height: 700px; */
+    padding: 10px 0px; 
+    background-color: #fff;
+    border-left: double 2px rgb(209, 74, 137);
+    border-right:double 2px rgb(209, 74, 137);
+    font-weight:bold;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: rgb(253, 203, 226);   
+    border: double 2px rgb(209, 74, 137); 
+  
+}
+
+
+
+.desImage {
+    -webkit-box-ordinal-group: 1; /* iOS 6-, Safari, Opera*/
+    -moz-box-ordinal-group: 1; /* Firefox*/
+    -ms-flex-order: 1; /* IE 10 */
+
+    width: 100%;
+    height: auto;
+    margin:auto; 
+    display:flex;  /*align images in center*/
+    justify-content: center;
+ 
+   
+}
+
+    .desImage img {
+        width: 20%;
+        height: 20%;
+        margin-left: auto;
+        margin-right:auto;
+        border: 2px solid rgb(253, 203, 226);
+        
+
+        
+    }
+
+/*recipe Title box*/
+.des {
+    margin-left: auto;
+    margin-right:auto;
+
+   
+    -webkit-box-ordinal-group: 2; /* iOS 6-, Safari, Opera*/
+    -moz-box-ordinal-group: 2; /* Firefox*/
+    -ms-flex-order: 2; /* IE 10 */
+
+    width: 50%;
+    height: 85px;
+    margin-bottom: 50px;
+    margin-top:15px;
+
+
+    color:rgb(29, 17, 21);  
+    text-align: center;
+    font-size: 85%;
+    font-weight: 540;
+    font-family: Quattrocento Sans;
+    border-top: dotted 4px rgb(253, 150, 198); 
+    border-bottom: dotted 4px rgb(253, 150, 198);
+
+}
+
+/*RECIPE*/
+.recipe {   /*100% font size of recipe box is 20px*/
+    font-family: Quattrocento Sans;
+    margin: 20px; 
+    display:block;
+    font-size: 28%;
+    border: 2px solid rgb(253, 150, 198);
+    border-width: 5px;
+    border-style: double;
+    background-color: rgb(255, 245, 252);
+
+}
+    .recipe .headers {
+        font-size: 125%;
+        font-weight: light;
+        font-style:normal;
+    }
+
+.info {
+    border-bottom: 2px solid rgb(253, 150, 198);
+    background-color: rgb(255, 231, 247);
+    font-size: 110%;
+    font-weight:550; 
+    padding-left:15px;
+
+    
+}
+
+.ingredients {
+    padding-top: 15px;
+    padding-left: 15px; 
+    border-bottom: 2px solid rgb(253, 150, 198);
+    font-style:oblique;
+    line-height: 1.5;
+    font-weight:lighter;
+}
+
+.procedure {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom:15px;
+    line-height: 2;
+    font-weight:lighter;
+}
+
+
+
+
+        </style>
+    </head>
+    <body>
+
+        <div class="Container">
+            <!-- Header -->
+            <header>
+                <span><img src="cat1.png" height=170px>Beanie Bakes</span>
+            </header>
+    
+            <!-- Navigation Bar -->
+            <span>
+                <nav><div class="topnav">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#allrecipes">All Recipes</a>
+                    <a href="#about">Cakes</a>
+                    <a href="#contact">Breads</a>
+                    <a href="#cookies">Cookies</a>
+                    <a href="#frostings">Frostings</a>
+                    <a href="appetizers">Appetizers</a>
+            
+                    <!-- TopNav Input and Button -->
+                    <div class = "search">
+                        <form action="/searcher/results" method="get" id="searchinput">
+                            <input id="results" 
+                                type="text" 
+                                name="results" 
+                                placeholder="Search Recipes..." 
+                                aria-label="Search through site content">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+      
+    
+                </div></nav>
+            </span>
+
+        <!-- Page Content -->
+        <div class="content">
+            <div class = "title"></div>
+                <!--Title-->
+
+                    <div class="des">
+                        Banana Bread
+                    </div>
+                    <div class="desImage">
+                        <img src="bb.jpg" /> 
+                        <img src="bb2.jpg" />
+                        <img src="bb3.jpg" />
+                   </div> 
+
+
+                <!-- Recipe -->
+                <div class="recipe">
+                    <div class="info">
+                        Tray Type: Loaf Pan&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Servings: 12 slices&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Bake Time: 50-65 minutes&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Prep Time: 30 minutes
+                    </div>
+                    <div class="ingredients">
+                        <div class="headers">Dry Ingredients</div>
+                        <ul>
+                            <li>2 cups all purpose flour</li>
+                            <li>3/4 cup light brown sugar, packed</li>
+                            <li>pinch of salt</li>
+                            <li>1 tsp baking soda </li>
+                            <li>1/2 tsp cinnamon powder, heaping</li>
+                            <li>1/8 tsp ground nutmeg</li>
+                            <li>3/4 cup of add-ins (chocolate chips, walnuts, pecans, etc.), optional</li>
+                        </ul>
+                        <div class="headers">Wet Ingredients</div>
+                        <ul>
+                            <li>2 eggs, room temperature</li>
+                            <li>1/2 cup (8 tbsp or 1 stick) unsalted butter, softened to room temperature</li>
+                            <li>1/3 cup sour cream, room temperature (full-fat plain or greek yogurt works too)</li>
+                            <li>1 tsp vanilla extract</li> 
+                            <li>4 bananas, mashed</li>
+                        </ul>
+                    </div>
+
+                    <div class ="procedure">
+                        <div class ="headers">Steps</div>
+                        <ol>
+                            <li>Preheat oven to 350F and line and grease a loaf pan</li>
+                            <li>With an electric mixer, cream the butter and sugar until light and fluffy, about 4 minutes</li>
+                            <li>Add the eggs in one at a time and beat just until incorporated</li>
+                            <li>Whisk in the mashed bananas, vanilla, and sour cream well </li>
+                            <li>Sift in the flour, salt, baking soda, cinnamon, and nutmeg</li>
+                            <li>Fold in add-ins if desired, be careful not to overmix</li>
+                            <li>Pour the batter into your loaf pan and bake for 50-65 minutes, until a toothpick
+                                comes out clean. At the 30 minute mark, cover the loaf with foil to avoid a burnt topping</li>
+                        </ol>
+                    </div>
+                  <!--End of recipe-->  
+                </div>  
+
+        <!--End of content-->
+        </div>
+
+        <footer>
+        </footer>
+        </div>
+    </body>
+
+</html>
